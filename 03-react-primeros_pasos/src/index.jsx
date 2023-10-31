@@ -2,9 +2,15 @@
 // fuente del single page funcione es lo siguiente:
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './styles.css';
+import PropTypeExample from './componentes/08-propTypes';
 
+// Importaciones de componentes.
 // import PrimerComponente from './componentes/03-primer-componente';
-import { ImpresionVariable } from './componentes/05-impresion-variables';
+// import { ImpresionVariable } from './componentes/05-impresion-variables';
+// import ColocarEstilos from './componentes/06-colocar-estilos';
+// import {PropsComunication, PropsComunication2} from './componentes/07-props';
+
 
 // Creamos el creatRoot para que nos muestre nuestra aplicacion y los componentes
 // que vamos agregando.
@@ -13,6 +19,9 @@ import { ImpresionVariable } from './componentes/05-impresion-variables';
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
     {/* <PrimerComponente /> */}
-    <ImpresionVariable />
+    {/* <ImpresionVariable /> */}
+    {/* <ColocarEstilos /> */}
+    {/* <PropsComunication2 title="Props" comment="Pasando props regulares"/> */}
+    <PropTypeExample saludo="hola" pregunta="estas bien?"/>
     </React.StrictMode>
 )

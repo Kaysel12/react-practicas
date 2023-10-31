@@ -23,3 +23,8 @@ export const ImpresionVariable = () => {
         </>
     )    
 }
+
+// Nota
+// Es recomendable que si no hay necesidad de poner una funcion o variable estatica dentro del componente
+// no se debe hacer. Lo mejor es dejarla afuera para que cuando se vuelva a renderizar no vuelva a declarar el
+// espacio de memoria nuevamente.
