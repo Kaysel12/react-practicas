@@ -1,14 +1,10 @@
 // DefaultProps
 // Cuando tratamos con las default props lo unico que hacemos es agregar valores por defectos a las props.
 
-// PropTypes
-// Los proptypes se utilizan para agregar reglas a los props de un componente.
-// Es decir, se crean parametros con restrincciones y tambien se puede marcar si es obligatorio.
-
 // Ejemplo
 import PropTypes from "prop-types";
 
-const PropTypeExample = ( { saludo, pregunta } ) => {
+const DefaultPropsExample = ( { saludo, pregunta } ) => {
     return(
         <>
             <div>
@@ -19,11 +15,15 @@ const PropTypeExample = ( { saludo, pregunta } ) => {
     );
 };
 
-export default PropTypeExample;
+export default DefaultPropsExample;
 
 
-// De esta forma se evita usar typescript y se asegura el desarrollo.
-PropTypeExample.propTypes = {
+DefaultPropsExample.propTypes = {
     saludo: PropTypes.string.isRequired,
     pregunta: PropTypes.string.isRequired,
+}
+
+DefaultPropsExample.defaultProps = {
+    saludo: "No hay saludo",
+    pregunta: "No hay pregunta"
 }

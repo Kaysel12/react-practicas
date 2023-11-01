@@ -3,13 +3,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
-import PropTypeExample from './componentes/08-propTypes';
 
 // Importaciones de componentes.
 // import PrimerComponente from './componentes/03-primer-componente';
 // import { ImpresionVariable } from './componentes/05-impresion-variables';
 // import ColocarEstilos from './componentes/06-colocar-estilos';
 // import {PropsComunication, PropsComunication2} from './componentes/07-props';
+// import PropTypeExample from './componentes/08-propTypes';
+import PropTypeExample from './componentes/09-defaultProps';
+import DefaultPropsExample from './componentes/09-defaultProps';
 
 
 // Creamos el creatRoot para que nos muestre nuestra aplicacion y los componentes
@@ -22,6 +24,7 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
     {/* <ImpresionVariable /> */}
     {/* <ColocarEstilos /> */}
     {/* <PropsComunication2 title="Props" comment="Pasando props regulares"/> */}
-    <PropTypeExample saludo="hola" pregunta="estas bien?"/>
+    {/* <PropTypeExample saludo="hola" pregunta="estas bien?"/> */}
+    <DefaultPropsExample />
     </React.StrictMode>
 )
