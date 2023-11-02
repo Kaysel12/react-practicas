@@ -4,3 +4,14 @@ body {
     font-size: 1.3rem;
     font-weight: 400;
 }
+
+button {
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 40px;
+}

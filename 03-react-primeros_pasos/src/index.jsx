@@ -13,7 +13,7 @@ import './styles.css';
 import PropTypeExample from './componentes/09-defaultProps';
 import DefaultPropsExample from './componentes/09-defaultProps';
 import ContadorApp from './componentes/10-contadorApp';
-
+import TareaUseState from './componentes/12-tarea.jsx'
 
 // Creamos el creatRoot para que nos muestre nuestra aplicacion y los componentes
 // que vamos agregando.
@@ -27,6 +27,7 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
     {/* <PropsComunication2 title="Props" comment="Pasando props regulares"/> */}
     {/* <PropTypeExample saludo="hola" pregunta="estas bien?"/> */}
     {/* <DefaultPropsExample /> */}
-    <ContadorApp />
+    {/* <ContadorApp /> */}
+    <TareaUseState />
     </React.StrictMode>
 )
